@@ -50,8 +50,11 @@ gem 'puma'
 gem 'rails_12factor'
 gem 'figaro'
 gem 'devise'
+gem 'cancancan', '~> 1.10'
 gem 'paperclip', '~> 4.2'
 gem 'aws-sdk', '< 2.0'
+gem 'pdfkit'
+gem 'wkhtmltopdf-binary'
 group :test, :development do
   gem 'faker'
   gem 'quiet_assets'
@@ -61,3 +64,13 @@ group :test, :development do
   gem 'better_errors'
   gem 'binding_of_caller'
 end
+
+gem 'bootstrap-sass'
+gem 'simple_form'
+
+source 'https://rails-assets.org' do
+  gem 'rails-assets-bootstrap'
+  gem 'rails-assets-angular'
+  gem 'rails-assets-angular-ui-router'
+end
+
