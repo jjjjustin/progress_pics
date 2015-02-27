@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
   devise_for :users
 
-  resources :users
-  resources :pictures
+  resources :users do
+    resources :pictures
+  end
 
   root 'static#index'
 

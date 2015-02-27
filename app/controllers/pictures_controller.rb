@@ -1,2 +1,67 @@
 class PicturesController < ApplicationController
+
+   def index
+    @pictures = Picture.all
+  end
+
+  # GET /users/1
+  # GET /users/1.json
+  def show
+  end
+
+  # GET /users/new
+  def new
+    @picture = Picture.new
+  end
+
+  # GET /users/1/edit
+  def edit
+  end
+
+  # POST /users
+  # POST /users.json
+  def create
+    @picture = Picture.new(picture_params)
+
+    respond_to do |format|
+      if @picture.save
+        format.html { redirect_to @picture, notice: 'Picture was successfully uploaded' }
+        format.json { render :show, status: :created, location: @picture }
+      else
+        format.html { render :new }
+        format.json { render json: @picture.errors, status: :unprocessable_entity }
+      end
+    end
+  end
+
+  # PATCH/PUT /users/1
+  # PATCH/PUT /users/1.json
+  def update
+    respond_to do |format|
+      if @picture.save
+        format.html { redirect_to @picture, notice: 'Picture was successfully updated' }
+        format.json { render :show, status: :created, location: @picture }
+      else
+        format.html { render :new }
+        format.json { render json: @picture.errors, status: :unprocessable_entity }
+      end
+    end
+  end
+
+  # DELETE /users/1
+  # DELETE /users/1.json
+  def destroy
+    @ppicture.destroy
+    respond_to do |format|
+      format.html { redirect_to pictures_url, notice: 'Picture was successfully destroyed.' }
+      format.json { head :no_content }
+    end
+  end
+
+  private
+
+    def picture_params
+      params.require(:picture).permit(:photo, :caption, :user_id)
+    end
+end
 end
