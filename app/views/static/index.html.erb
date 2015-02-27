@@ -1,6 +1,34 @@
 <div ng-app="app">
-  <div ui-view>
-  </div>
+ <!--  <div ui-view>
+  </div> how does ui-view work? it's for the Angular router -->
+
+  <div ng-controller="AppController">
+        <input type="file" nv-file-select uploader="uploader"/><br/>
+        <ul>
+            <li ng-repeat="item in uploader.queue">
+                Name: <span ng-bind="item.file.name"></span><br/>
+                <button ng-click="item.upload()">upload</button>
+            </li>
+        </ul>
+
+        <ng-camera
+    capture-message="Cheeeese!"
+    countdown="3"
+    output-height="160"
+    output-width="213"
+    viewer-height="320"
+    viewer-width="426"
+    image-format="jpeg"
+    jpeg-quality="100"
+    action-message="Take picture"
+    snapshot="vm.picture"
+    flash-fallback-url="/vendors/webcamjs/webcam.swf"
+    overlay-url="/overlay.png"
+    shutter-url="/shutter.mp3"
+></ng-camera>
+
+
+ </div>
 </div>
 
 

@@ -1,0 +1,16 @@
+To add a new library into rails
+
+For things found on Rails-Assets 
+Step 1 - Find the package on rails-assets.org
+Step 2 - add the gem line of code to Gemfile in the source 'https://rails-assets.org' section
+Step 3 - Add the //= require ng-camera (example - replace ng-camera) to application.js file  (app/assets/javascript/application.js) before the line item for //= require_tree
+Step 4 - Run bundle install from the terminal.
+
+For things not found on Rails Assets 
+Step 1 - download the zip file source code from Github (or other source)
+Step 2 - upload the .min.js (or .js if the .min.js is not available) to the assets >> javascripts >> app >> 
+Step 3 - Add the //= require ng-camera (example - replace ng-camera) to application.js file  (app/assets/javascript/application.js) before the line item for //= require_tree
+
+How to push from your local branch to the remote master repo on Github
+Step 1 - Make sure everything is added, committed to your local branch
+Step 2 - git checkout master to switch to my local master branch
