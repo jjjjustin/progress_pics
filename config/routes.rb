@@ -5,6 +5,10 @@ Rails.application.routes.draw do
     resources :pictures
   end
 
+  get '/landing/', to: 'static#landing'
+
+  get '/javascript/', to: 'static#index'
+
   root 'static#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
