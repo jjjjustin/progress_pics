@@ -1,4 +1,4 @@
-<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="1944" measuredH="1119" mockupW="1899" mockupH="1105">
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="1944" measuredH="1119" mockupW="1894" mockupH="1105">
   <controls>
     <control controlID="0" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="50" y="15" w="-1" h="-1" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
       <controlProperties>
@@ -32,12 +32,12 @@
     </control>
     <control controlID="8" controlTypeID="com.balsamiq.mockups::Image" x="684" y="174" w="160" h="134" measuredW="77" measuredH="79" zOrder="7" locked="false" isInGroup="-1">
       <controlProperties>
-        <text>Image</text>
+        <text>or</text>
       </controlProperties>
     </control>
-    <control controlID="10" controlTypeID="com.balsamiq.mockups::Button" x="731" y="228" w="-1" h="-1" measuredW="64" measuredH="27" zOrder="8" locked="false" isInGroup="-1">
+    <control controlID="10" controlTypeID="com.balsamiq.mockups::Button" x="690" y="255" w="146" h="27" measuredW="151" measuredH="27" zOrder="8" locked="false" isInGroup="-1">
       <controlProperties>
-        <text>Upload</text>
+        <text>Upload%20existing%20photo</text>
       </controlProperties>
     </control>
     <control controlID="13" controlTypeID="com.balsamiq.mockups::TextArea" x="671" y="163" w="186" h="160" measuredW="200" measuredH="140" zOrder="6" locked="false" isInGroup="-1">
@@ -45,9 +45,9 @@
         <text/>
       </controlProperties>
     </control>
-    <control controlID="14" controlTypeID="com.balsamiq.mockups::SubTitle" x="651" y="119" w="-1" h="-1" measuredW="246" measuredH="27" zOrder="9" locked="false" isInGroup="-1">
+    <control controlID="14" controlTypeID="com.balsamiq.mockups::SubTitle" x="613" y="119" w="-1" h="-1" measuredW="300" measuredH="27" zOrder="9" locked="false" isInGroup="-1">
       <controlProperties>
-        <text>Upload%20your%20before%20pic</text>
+        <text>Let%27s%20create%20your%20before%20pic</text>
       </controlProperties>
     </control>
     <control controlID="15" controlTypeID="com.balsamiq.mockups::Button" x="796" y="334" w="-1" h="-1" measuredW="64" measuredH="27" zOrder="10" locked="false" isInGroup="-1">
@@ -234,7 +234,7 @@
         <text>password</text>
       </controlProperties>
     </control>
-    <control controlID="63" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="45" y="443" w="-1" h="-1" measuredW="450" measuredH="400" zOrder="46" locked="false" isInGroup="-1">
+    <control controlID="63" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="50" y="434" w="-1" h="-1" measuredW="450" measuredH="400" zOrder="46" locked="false" isInGroup="-1">
       <controlProperties>
         <text>A%20Web%20Page%0Ahttp%3A//picsumo.com/login%09</text>
       </controlProperties>
@@ -294,6 +294,11 @@
     <control controlID="77" controlTypeID="com.balsamiq.mockups::Link" x="219" y="702" w="-1" h="-1" measuredW="98" measuredH="19" zOrder="57" locked="false" isInGroup="-1">
       <controlProperties>
         <text>Forgot%20password</text>
+      </controlProperties>
+    </control>
+    <control controlID="78" controlTypeID="com.balsamiq.mockups::Button" x="690" y="186" w="147" h="42" measuredW="86" measuredH="27" zOrder="58" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Take%20photo</text>
       </controlProperties>
     </control>
   </controls>
