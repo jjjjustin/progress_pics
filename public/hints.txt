@@ -13,3 +13,4 @@ Step 3 - Add the //= require ng-camera (example - replace ng-camera) to applicat
 
 How to push from your local branch to the remote master repo on Github
 Step 1 - Make sure everything is added, committed to your local branch
+Step 2 - git checkout master to switch to my local master branch
