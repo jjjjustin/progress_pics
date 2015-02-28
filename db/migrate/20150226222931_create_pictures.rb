@@ -9,3 +9,5 @@ class CreatePictures < ActiveRecord::Migration
     add_foreign_key :pictures, :users
   end
 end
+
+
