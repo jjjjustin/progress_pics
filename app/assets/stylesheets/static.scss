@@ -2,8 +2,13 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+@import 'reset';
+
+
 $font-stack:    Helvetica, sans-serif;
 $primary-color: #333;
+
+
 
 // body {
 //   font: 100% $font-stack;
@@ -143,10 +148,6 @@ h4 {
 	margin:1em 2%;
 }
 
-// .ryan {
-// 	background: url(http://xinyu0.github.io/tiy-assignments/images/processpics/progrss_pics_landing1.png);
-// 	background-size: cover;
-// }
 
 footer {
 	width:100%;
