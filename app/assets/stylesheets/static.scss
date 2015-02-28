@@ -70,26 +70,33 @@ header {
 
 .wrapper {
 	width:80%;
-	max-width: 1280;
+	max-width: 1280px;
 	margin:0 auto;
 }
+
+
 .signup-btn {
+	display: block;
 	width: 170px;
 	height: 60px;
-	color: #00ADEF;
-	font-size: 24px;
-	border-radius: 30px;
+	background:#e5f6fd; 
+	color:#00ADEF;
+	font-size: 1.5em;
+	font-weight: 700;
+	border-radius: 10px;
 	border: 3px solid #00ADEF;
 	line-height: 55px;
 	text-align: center;
+	text-decoration: none;
 	margin: 30px auto 50px auto;
 	-webkit-transition: background 0.2s ease-out, color 0.2s ease-out, border 0.2s ease-out;
 	-moz-transition: background 0.2s ease-out, color 0.2s ease-out, border 0.2s ease-out;
 	-o-transition: background 0.2s ease-out, color 0.2s ease-out, border 0.2s ease-out;
 	transition: background 0.2s ease-out, color 0.2s ease-out, border 0.2s ease-out;
+
 	&:hover {
-        color: white;
         background: #00ADEF;
+        color:#fff ;
         }
 }
 
