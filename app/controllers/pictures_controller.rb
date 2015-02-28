@@ -1,11 +1,18 @@
+require "base64"
+
 class PicturesController < ApplicationController
 
-   def index
+  def index
     @pictures = Picture.all
   end
 
-  # GET /users/1
-  # GET /users/1.json
+  def before
+    @before_pic = Picture.before
+  end
+
+  def after
+    @after_pic = Picture.after
+
   def show
   end
 
