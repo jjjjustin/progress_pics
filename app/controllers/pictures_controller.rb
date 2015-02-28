@@ -29,7 +29,7 @@ class PicturesController < ApplicationController
   # POST /users.json
   def create
     @picture = Picture.new(picture_params)
-
+    @picture.user_id = current_user.id
     respond_to do |format|
       if @picture.save
         format.html { redirect_to @picture, notice: 'Picture was successfully uploaded' }
