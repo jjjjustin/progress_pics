@@ -1,3 +1,4 @@
+require 'base64'
 class PicturesController < ApplicationController
 
    def index
@@ -22,13 +23,10 @@ class PicturesController < ApplicationController
   # POST /users.json
   def create
     @picture = Picture.new(picture_params)
-
     respond_to do |format|
       if @picture.save
-        format.html { redirect_to @picture, notice: 'Picture was successfully uploaded' }
-        format.json { render :show, status: :created, location: @picture }
+        format.json { render json: @picture.to_json, status: :created }
       else
-        format.html { render :new }
         format.json { render json: @picture.errors, status: :unprocessable_entity }
       end
     end
@@ -63,5 +61,4 @@ class PicturesController < ApplicationController
     def picture_params
       params.require(:picture).permit(:photo, :caption, :user_id)
     end
-end
 end
