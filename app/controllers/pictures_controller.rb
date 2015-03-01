@@ -13,6 +13,7 @@ class PicturesController < ApplicationController
 
   def after
     @after_pic = Picture.after
+  end
 
   def show
   end
