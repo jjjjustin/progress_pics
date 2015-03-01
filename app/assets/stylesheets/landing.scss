@@ -95,6 +95,13 @@ header {
     //     }
 }
 
+.loginlink a {
+	color: #8B8B8B;
+	&:hover {
+		        color: #222;
+		        }
+}
+
 h1 {
 	font-size: 70.4px;
 	text-align: center;
