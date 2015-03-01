@@ -38,15 +38,37 @@
         </ng-camera>
       </div>
 
-      <div class="draft-image-container" ng-show="vm.picture">
+      <div class="draft-image-container" ng-show="vm.picture && showShutter">
         <img ng-src="{{vm.picture}}" alt="draft picture">
         <button class="tryAgain" ng-click="vm.picture = !vm.picture">Try Again</button>
-        <button class="accept" ng-click="storePhoto(vm.picture)">Accept</button>
+        <button class="accept" ng-click="showCaption()">Accept</button>
       </div>
 
-      <figure class="image-with-caption-container" ng-show="vm.picture">
-        <img ng-src="{{vm.picture}}" alt="caption picture">
-      </figure>
+      <div class="image-save" ng-show="showIt">
+          <figure class="image-with-caption">
+            <img ng-src="{{vm.picture}}" alt="caption picture">
+            <figcaption>
+                <p class="day">Day 1</p>
+                <p class="date">{{date | date:'mediumDate'}}</p>
+            </figcaption>
+          </figure>
+          <div class="image-save-buttons">
+              <button class="save-and-set">Save and Set Reminder Date for Next Photo</button>
+              <p>or</p>
+              <button class="go-to-after">Upload my "after" photo now</button>
+          </div>
+      </div>
+      <div class="set-reminder">
+        <p>How many days til your next progress pic?</p>
+        <select>
+            <option value="7">7 days</option>
+            <option value="14">14 days</option>
+            <option value="30">30 days</option>
+            <option value="60">60 days</option>
+            <option value="90">90 days</option>
+        </select>
+        <input type="datetime" placeholder="enter a reminder date">
+      </div>
     </div>
 </div>  
 

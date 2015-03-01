@@ -7,6 +7,8 @@ angular.module('app.controller',[])
     .controller('PhotoCtrl', function($scope, $http) {
 	    console.log('controller initialized');
 
+	    $scope.date = new Date();
+
 	    //Pic display settings
 
 	    $scope.showPicOptions = true;
@@ -16,8 +18,12 @@ angular.module('app.controller',[])
 	    	$scope.showPicOptions = false;
 	    	$scope.hidePicTaker = false;
 	    }
+	    $scope.showIt = false;
+	   	$scope.showShutter = true;
 
-	    $scope.storePhoto = function(photo) {
+	    $scope.showCaption = function() {
+	    	$scope.showIt = true;
+	    	$scope.showShutter = false;
 			
 		 };
 	

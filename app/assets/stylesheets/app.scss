@@ -91,11 +91,13 @@ input[type="file"] {
 	margin: 10px auto;
 	text-align: center;
 	background-color: purple;
+	border-radius: 5px;
 }
 
 .draft-image-container img {
 	display: block;
 	margin: 0 auto;
+	border-radius: 5px;
 }
 
 .tryAgain {
@@ -105,4 +107,39 @@ input[type="file"] {
 
 .accept {
 	display: inline-block;
+}
+
+figure.image-with-caption {
+	display: block;
+	width: 416px;
+	height: 320px;
+	margin: 10px auto;
+	background-color: blue;
+	position: relative;
+	border-radius: 5px;
+}
+
+.image-with-caption img {
+	// position: absolute;
+	// left: 0;
+	// top: 0;
+	border-radius: 5px;
+}
+
+.image-with-caption figcaption {
+	z-index:100;
+    position:absolute;    
+    color:white;
+    font-size:16px;
+    font-weight:bold;
+    left:10px;
+    bottom:10px;
+}
+
+.image-save-buttons {
+	text-align: center;
+}
+
+.set-reminder {
+	text-align: center;
 }
