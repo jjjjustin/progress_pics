@@ -5,6 +5,7 @@
 $col: 6.5%;
 $gut: 2%;
 
+
 @mixin grid($cnum) {
   width: ($col*$cnum)+($gut*(($cnum)-1));
   min-height: 200px;
@@ -104,4 +105,8 @@ input[type=text], input[type=email], input[type=password], input[type=password_c
 .hint {
   display: block;
   margin-bottom: 10px;
+}
+
+.loginlink a {
+  text-decoration: none;
 }
