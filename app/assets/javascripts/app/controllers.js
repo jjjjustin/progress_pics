@@ -17,7 +17,8 @@
 	    $scope.takePhotoEnabled = function () {
 	    	$scope.showPicOptions = false;
 	    	$scope.hidePicTaker = false;
-	    }
+	    };
+
 	    $scope.showIt = false;
 	   	$scope.showShutter = true;
 
@@ -27,7 +28,14 @@
 
 		 };
 
-	    // Called when Accept button is clicked
+
+		 $scope.afterPhoto = false;
+
+		$scope.addAfterPhoto = function () {
+			$scope.afterPhoto = true;
+			$scope.showIt = false;
+		};
+		    // Called when Accept button is clicked
 		// send photo to the server
 		// $scope.storePhoto = function(photo) {
 		// 	console.log(photo)
