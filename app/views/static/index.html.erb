@@ -1,32 +1,77 @@
-<div ng-app="app">
- <!--  <div ui-view></div> how does ui-view work? it's for the Angular router -->
-	<div ng-controller="AppController">
+<div ng-app='app'>
+    <div ng-controller="PhotoCtrl">
 
-	<div class="photo-container" ng-hide="vm.picture">
-		<ng-camera
-		    capture-message="Cheeeese!"
-		    countdown="3"
-		    output-height="160"
-		    output-width="213"
-		    viewer-height="320"
-		    viewer-width="426"
-		    image-format="jpeg, .png"
-		    jpeg-quality="100"
-		    action-message="Take picture (7 second countdown)"
-		    snapshot="vm.picture"
-		    flash-fallback-url="/vendors/webcamjs/webcam.swf"
-		    overlay-url="/overlay.png"
-		    shutter-url="/shutter.mp3">
-		</ng-camera>
-	</div>
+    <div class="progress-bar">
+        <p>Progress Bar area</p>
+        <ul>
+            <li>Step 1 - Before Photo</li>
+            <li>Step 2 - After Photo</li>
+            <li>Step 3 - Share</li>
+        </ul>
+    </div>
 
-	<div ng-if="vm.picture">
-		<img ng-src="{{vm.picture}}" alt="webcam picture">
-		<button ng-click="vm.picture = !vm.picture">Try Again</button>
-		<button ng-click="storePhoto(vm.picture)">Accept</button>
-	</div>
+    <div class="instructions">Take a "before" photo (or upload existing)</div>
 
-	</div>
-</div>
+    <div class="before-options" ng-if="showPicOptions">
+        <button class="take-photo-option" ng-click="takePhotoEnabled()">Take Photo</button>
+
+        <label class="custom-file-upload">
+            <input type="file"/>
+            Upload existing
+        </label>
+    </div>
+
+
+     <div class="shutter-container" ng-hide="hidePicTaker || vm.picture">
+        <ng-camera
+            capture-message="Success!"
+            countdown="1"
+            output-height="320"
+            output-width="416"
+            viewer-height="auto"
+            viewer-width="auto"
+            image-format="jpeg, png"
+            jpeg-quality="100"
+            action-message="Take picture"
+            snapshot="vm.picture"
+            flash-fallback-url="/vendors/webcamjs/webcam.swf">
+        </ng-camera>
+      </div>
+
+      <div class="draft-image-container" ng-show="vm.picture">
+        <img ng-src="{{vm.picture}}" alt="draft picture">
+        <button class="tryAgain" ng-click="vm.picture = !vm.picture">Try Again</button>
+        <button class="accept" ng-click="storePhoto(vm.picture)">Accept</button>
+      </div>
+
+      <figure class="image-with-caption-container" ng-show="vm.picture">
+        <img ng-src="{{vm.picture}}" alt="caption picture">
+      </figure>
+    </div>
+</div>  
+
+<!-- <<div class="photo-container" ng-hide="vm.picture">
+        <ng-camera
+            capture-message="Cheeeese!"
+            countdown="1"
+            output-height="160"
+            output-width="213"
+            viewer-height="320"
+            viewer-width="426"
+            image-format="jpeg, .png"
+            jpeg-quality="100"
+            action-message="Take picture (7 second countdown)"
+            snapshot="vm.picture"
+            flash-fallback-url="/vendors/webcamjs/webcam.swf"
+            overlay-url="/overlay.png"
+            shutter-url="/shutter.mp3">
+        </ng-camera>
+      </div> -->
+
+      <!--  viewer-height="320"
+            viewer-width="426" -->
+
+           <!--    overlay-url="overlay.png"
+            shutter-url="shutter.mp3" -->
 
 
