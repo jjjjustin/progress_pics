@@ -17,7 +17,8 @@ angular.module('app.controller',[])
 	    $scope.takePhotoEnabled = function () {
 	    	$scope.showPicOptions = false;
 	    	$scope.hidePicTaker = false;
-	    }
+	    };
+
 	    $scope.showIt = false;
 	   	$scope.showShutter = true;
 
@@ -26,6 +27,13 @@ angular.module('app.controller',[])
 	    	$scope.showShutter = false;
 			
 		 };
+
+		 $scope.afterPhoto = false;
+
+		$scope.addAfterPhoto = function () {
+			$scope.afterPhoto = true;
+			$scope.showIt = false;
+		};
 	
 	    // Called when Accept button is clicked
 		// send photo to the server

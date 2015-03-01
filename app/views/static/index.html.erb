@@ -53,14 +53,14 @@
             </figcaption>
           </figure>
           <div class="image-save-buttons">
-              <button class="go-to-after">Save and upload my "after" photo now</button>
+              <button class="go-to-after" ng-click="addAfterPhoto()">Save and add my "after" photo now</button>
                 <p>or</p>
-              <button class="save-and-set">Save and set reminder date for "after" photo</button>
+              <button class="save-and-set" ng-click="setReminder = true">Save and add my "after" photo later</button>
         
               
           </div>
       </div>
-      <div class="set-reminder">
+      <div class="set-reminder" ng-show="setReminder">
         <p>How many days til your "after" photo?</p>
         <select>
             <option value="7">In 7 days</option>
@@ -76,8 +76,24 @@
             <option value="both">Both email and text</option>
         </select>
       </div>
-    </div>
-</div>  
+
+     <div class="shutter-container" ng-if="afterPhoto">
+        <ng-camera
+            capture-message="Success!"
+            countdown="1"
+            output-height="320"
+            output-width="416"
+            viewer-height="auto"
+            viewer-width="auto"
+            image-format="jpeg, png"
+            jpeg-quality="100"
+            action-message="Take a damn picture"
+            snapshot="afterPhoto"
+            flash-fallback-url="/vendors/webcamjs/webcam.swf">
+        </ng-camera>
+      </div>
+    </div> <!-- Closes controller div -->
+</div>  <!-- Closes ng-app div -->
 
 <!-- <<div class="photo-container" ng-hide="vm.picture">
         <ng-camera
@@ -102,5 +118,15 @@
 
            <!--    overlay-url="overlay.png"
             shutter-url="shutter.mp3" -->
+
+          <!--    <div class="before-photo-left">
+          <figure class="image-with-caption">
+            <img ng-src="{{vm.picture}}" alt="caption picture">
+            <figcaption>
+                <p class="day">Day 1</p>
+                <p class="date">{{date | date:'mediumDate'}}</p>
+            </figcaption>
+          </figure -->
+      <!--   </div> -->
 
 
