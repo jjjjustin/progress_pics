@@ -2,9 +2,6 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-
-@import 'reset';
-@import 'app';
 $col: 6.5%;
 $gut: 2%;
 
@@ -19,6 +16,8 @@ $gut: 2%;
   box-sizing:border-box;
 }
 
+
+//
 
 .whole {
 	width:100%;
@@ -140,9 +139,9 @@ h3 {
 @media screen and (min-width: 550px) {
 h3 {
 	font-size: 20px;
-	
+
 }
-}	
+}
 
 h4 {
 	margin-top: 5em;
@@ -161,7 +160,7 @@ header h6 {
 	display: block;
 	width: 170px;
 	height: 60px;
-	background:#e5f6fd; 
+	background:#e5f6fd;
 	color:#00ADEF;
 	font-size: 1.5em;
 	font-weight: 700;
@@ -195,7 +194,7 @@ section {
 }
 
 
-.landingpic, .landingtext { 
+.landingpic, .landingtext {
     width:100%;
     min-height: 120px;
     max-height: 500px;
@@ -207,52 +206,53 @@ section {
 
 @media screen and (min-width: 550px) {
 
-	.landingpic {
-	  @include grid(7);
-	}
+.landingpic {
+  @include grid(7);
+}
 
-	.landingtext {
-	  @include grid(5);
-	}
+.landingtext {
+  @include grid(5);
+}
 
-	div:last-of-type {
-	  margin-right: 0;
-	}
+div:last-of-type {
+  margin-right: 0;
+}
 }
 
 @media screen and (min-width: 850px) {
 
-	.landingpic {
-	  @include grid(6);
-	}
+.landingpic {
+  @include grid(6);
+}
 
-	.landingtext {
-	  @include grid(6);
-	}
-
-
-	.landingpic img {
-		width:90%;
-		max-width:450px;
-		max-height: 450px;
-	}
-
-	// @media screen and (min-width: 550px) {
-	// 	.landingpic img {
-	// 	width:95%;
-	// }
-	// }
-
-	footer {
-		width:100%;
-		background:#c1e9fb;
-		text-align: center;
-		padding:1em 0;
-		margin-top: 30px;
-		clear: both;
-	}
+.landingtext {
+  @include grid(6);
+}
 
 }
+
+
+.landingpic img {
+	width:90%;
+	max-width:450px;
+	max-height: 450px;
+}
+
+// @media screen and (min-width: 550px) {
+// 	.landingpic img {
+// 	width:95%;
+// }
+// }
+
+footer {
+	width:100%;
+	background:#c1e9fb;
+	text-align: center;
+	padding:1em 0;
+	margin-top: 30px;
+	clear: both;
+}
+
 // index.html styling
 
 
@@ -262,5 +262,4 @@ section {
 // * {
 //   border: 1px solid red !important;
 // }
-
 

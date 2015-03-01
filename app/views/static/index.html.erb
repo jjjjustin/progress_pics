@@ -1,6 +1,6 @@
 <div ng-app='app'>
     <div ng-controller="PhotoCtrl">
-
+    <%= link_to "Log out", destroy_user_session_path, method: :delete %>
     <div class="progress-bar">
         <p>Progress Bar area</p>
         <ul>
@@ -58,6 +58,11 @@
               <button class="save-and-set" ng-click="setReminder = true">Save and add my "after" photo later</button>
         
               
+
+              <button class="save-and-set">Save and set reminder date for "after" photo</button>
+
+
+
           </div>
       </div>
       <div class="set-reminder" ng-show="setReminder">
@@ -77,6 +82,7 @@
         </select>
       </div>
 
+
      <div class="shutter-container" ng-if="afterPhoto">
         <ng-camera
             capture-message="Success!"
@@ -94,6 +100,9 @@
       </div>
     </div> <!-- Closes controller div -->
 </div>  <!-- Closes ng-app div -->
+    </div>
+</div>
+
 
 <!-- <<div class="photo-container" ng-hide="vm.picture">
         <ng-camera
