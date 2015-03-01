@@ -85,6 +85,15 @@ header {
 	overflow: hidden;
 }
 
+.wrapper a {
+    text-decoration: none;
+    color:#00ADEF;
+    // clear: both;
+    // display: inline-block;
+    // &:hover {
+    //     color:#222 ;
+    //     }
+}
 
 h1 {
 	font-size: 70.4px;
@@ -139,6 +148,14 @@ h3 {
 h4 {
 	margin-top: 5em;
 	font-weight: 700;
+}
+
+header h6 {
+	padding-left:25px;
+	color:#00adef;
+	font-weight: 700;
+	float: left;
+	font-size: 20px;
 }
 
 .signup-btn {
