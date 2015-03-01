@@ -65,6 +65,12 @@ class PicturesController < ApplicationController
     end
   end
 
+  def index
+   render json: Issue.all
+   rescue StandardError => e
+   render json: { message: e.message, status: 500 }.to_json, status: 500
+ end
+
   private
 
     def picture_params

@@ -1,4 +1,4 @@
-angular.module('app.controller',[])
+[angular.module('app.controller',[])
     .controller('AppController', function($scope, $http) {
 	    console.log('controller initialized');
 
@@ -24,9 +24,9 @@ angular.module('app.controller',[])
 	    $scope.showCaption = function() {
 	    	$scope.showIt = true;
 	    	$scope.showShutter = false;
-			
+
 		 };
-	
+
 	    // Called when Accept button is clicked
 		// send photo to the server
 		// $scope.storePhoto = function(photo) {
