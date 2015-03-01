@@ -1,28 +1,19 @@
-== README
+== PROGRESS PICS
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+The fastest and easiest way to track and show off your progress - whether you're looking to slim down or pump up!
 
-Things you may want to cover:
+*Features*
 
-* Ruby version
+* Secure user authorization - only you can view your pictures until you've authorized other users
 
-* System dependencies
+* Simple point 'n click functionality - take a picture and post immediately using your home PC or mobile phone
 
-* Configuration
+* Easily download images or link to your personal page - share your progress across all forms of social media
 
-* Database creation
+Live access at: https://protected-gorge-8922.herokuapp.com
 
-* Database initialization
+Collaborators:
 
-* How to run the test suite
+Xinyu
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Ryan
