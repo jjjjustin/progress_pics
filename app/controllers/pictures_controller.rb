@@ -4,6 +4,7 @@ class PicturesController < ApplicationController
 
   def index
     @pictures = Picture.all
+      render :json => @pictures
   end
 
   def before
@@ -12,6 +13,7 @@ class PicturesController < ApplicationController
 
   def after
     @after_pic = Picture.after
+  end
 
   def show
   end
