@@ -140,9 +140,9 @@ h3 {
 @media screen and (min-width: 550px) {
 h3 {
 	font-size: 20px;
-	
+
 }
-}	
+}
 
 h4 {
 	margin-top: 5em;
@@ -161,7 +161,7 @@ header h6 {
 	display: block;
 	width: 170px;
 	height: 60px;
-	background:#e5f6fd; 
+	background:#e5f6fd;
 	color:#00ADEF;
 	font-size: 1.5em;
 	font-weight: 700;
@@ -195,7 +195,7 @@ section {
 }
 
 
-.landingpic, .landingtext { 
+.landingpic, .landingtext {
     width:100%;
     min-height: 120px;
     max-height: 500px;
@@ -218,7 +218,7 @@ section {
 div:last-of-type {
   margin-right: 0;
 }
-
+}
 
 @media screen and (min-width: 850px) {
 
@@ -261,4 +261,4 @@ footer {
 // * {
 //   border: 1px solid red !important;
 // }
-
+}
