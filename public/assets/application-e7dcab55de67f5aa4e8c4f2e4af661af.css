@@ -1,0 +1,569 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* line 7, /Users/justinsitarz/Desktop/ironyard/week_8/weekend_8/progress_pics/app/assets/stylesheets/areset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+/* line 28, /Users/justinsitarz/Desktop/ironyard/week_8/weekend_8/progress_pics/app/assets/stylesheets/areset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* line 32, /Users/justinsitarz/Desktop/ironyard/week_8/weekend_8/progress_pics/app/assets/stylesheets/areset.scss */
+body {
+  line-height: 1;
+}
+
+/* line 35, /Users/justinsitarz/Desktop/ironyard/week_8/weekend_8/progress_pics/app/assets/stylesheets/areset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 38, /Users/justinsitarz/Desktop/ironyard/week_8/weekend_8/progress_pics/app/assets/stylesheets/areset.scss */
+blockquote, q {
+  quotes: none;
+}
+
+/* line 41, /Users/justinsitarz/Desktop/ironyard/week_8/weekend_8/progress_pics/app/assets/stylesheets/areset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 46, /Users/justinsitarz/Desktop/ironyard/week_8/weekend_8/progress_pics/app/assets/stylesheets/areset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* line 18, /Users/justinsitarz/Desktop/ironyard/week_8/weekend_8/progress_pics/app/assets/stylesheets/busers.scss */
+.userpg {
+  margin-top: 100px;
+}
+
+/* line 22, /Users/justinsitarz/Desktop/ironyard/week_8/weekend_8/progress_pics/app/assets/stylesheets/busers.scss */
+.usercol, .usercolm {
+  width: 90%;
+  background: transparent;
+  margin: 5px 0;
+  padding: 5px 0;
+  text-align: left;
+}
+
+@media screen and (min-width: 550px) {
+  /* line 32, /Users/justinsitarz/Desktop/ironyard/week_8/weekend_8/progress_pics/app/assets/stylesheets/busers.scss */
+  .usercolm {
+    width: 49%;
+    min-height: 200px;
+    float: left;
+    margin-right: 2%;
+    padding: 5px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+  }
+
+  /* line 36, /Users/justinsitarz/Desktop/ironyard/week_8/weekend_8/progress_pics/app/assets/stylesheets/busers.scss */
+  .usercol {
+    width: 23.5%;
+    min-height: 200px;
+    float: left;
+    margin-right: 2%;
+    padding: 5px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+  }
+
+  /* line 40, /Users/justinsitarz/Desktop/ironyard/week_8/weekend_8/progress_pics/app/assets/stylesheets/busers.scss */
+  div:last-of-type {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 850px) {
+  /* line 47, /Users/justinsitarz/Desktop/ironyard/week_8/weekend_8/progress_pics/app/assets/stylesheets/busers.scss */
+  .usercolm {
+    width: 40.5%;
+    min-height: 200px;
+    float: left;
+    margin-right: 2%;
+    padding: 5px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+  }
+
+  /* line 51, /Users/justinsitarz/Desktop/ironyard/week_8/weekend_8/progress_pics/app/assets/stylesheets/busers.scss */
+  .usercol {
+    width: 27.75%;
+    min-height: 200px;
+    float: left;
+    margin-right: 2%;
+    padding: 5px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+  }
+}
+/* line 83, /Users/justinsitarz/Desktop/ironyard/week_8/weekend_8/progress_pics/app/assets/stylesheets/busers.scss */
+.form-inputs input[type=User_name], input[type=email], input[type=password], input[type=password_confirmation] {
+  background: #f5f5f5;
+  font-size: 0.8rem;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  border: none;
+  padding: 13px 10px;
+  width: 100%;
+  margin-bottom: 20px;
+  box-shadow: inset 0px 2px 3px rgba(0, 0, 0, 0.1);
+  clear: both;
+}
+
+/* line 98, /Users/justinsitarz/Desktop/ironyard/week_8/weekend_8/progress_pics/app/assets/stylesheets/busers.scss */
+.form-inputs input[type=user_name]:focus, input[type=email]:focus, input[type=password_confirmation]:focus, input[type=password]:focus {
+  outline: none;
+}
+
+/* line 103, /Users/justinsitarz/Desktop/ironyard/week_8/weekend_8/progress_pics/app/assets/stylesheets/busers.scss */
+.form-actions input[type=submit] {
+  max-width: 100px;
+  width: 50%;
+  margin-bottom: 6px;
+  margin-top: 5px;
+  padding: 10px 0;
+  color: #00ADEF;
+  font-size: 1em;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  background: transparent;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  border: 2px solid #00ADEF;
+  clear: both;
+}
+/* line 120, /Users/justinsitarz/Desktop/ironyard/week_8/weekend_8/progress_pics/app/assets/stylesheets/busers.scss */
+.form-actions input[type=submit]:hover {
+  background: #79d0f6;
+  color: #fff;
+}
+
+/* line 127, /Users/justinsitarz/Desktop/ironyard/week_8/weekend_8/progress_pics/app/assets/stylesheets/busers.scss */
+.wrapper span a {
+  text-decoration: none;
+  color: #8B8B8B;
+  clear: both;
+  display: inline-block;
+}
+/* line 133, /Users/justinsitarz/Desktop/ironyard/week_8/weekend_8/progress_pics/app/assets/stylesheets/busers.scss */
+.wrapper span a:hover {
+  color: #222;
+}
+/* line 22, /Users/justinsitarz/Desktop/ironyard/week_8/weekend_8/progress_pics/app/assets/stylesheets/landing.scss */
+.whole {
+  width: 100%;
+  font-family: "museo-sans",sans-serif;
+  color: #8B8B8B;
+  background: #eee;
+  background: -webkit-linear-gradient(#fff, #e5f6fd);
+  background: -moz-linear-gradient(#fff, #e5f6fd);
+  background: linear-gradient(#fff, #e5f6fd);
+}
+
+/* line 32, /Users/justinsitarz/Desktop/ironyard/week_8/weekend_8/progress_pics/app/assets/stylesheets/landing.scss */
+header {
+  width: 100%;
+  height: 3em;
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+  background: #fff;
+  padding-top: 1.5em;
+}
+/* line 40, /Users/justinsitarz/Desktop/ironyard/week_8/weekend_8/progress_pics/app/assets/stylesheets/landing.scss */
+header ul {
+  float: right;
+}
+/* line 42, /Users/justinsitarz/Desktop/ironyard/week_8/weekend_8/progress_pics/app/assets/stylesheets/landing.scss */
+header ul li {
+  display: inline-block;
+  margin-right: 1.5em;
+}
+/* line 45, /Users/justinsitarz/Desktop/ironyard/week_8/weekend_8/progress_pics/app/assets/stylesheets/landing.scss */
+header ul li a {
+  text-decoration: none;
+  color: #8B8B8B;
+  font-size: 1.1em;
+}
+
+/* line 56, /Users/justinsitarz/Desktop/ironyard/week_8/weekend_8/progress_pics/app/assets/stylesheets/landing.scss */
+header a:hover {
+  color: #222;
+}
+/* line 59, /Users/justinsitarz/Desktop/ironyard/week_8/weekend_8/progress_pics/app/assets/stylesheets/landing.scss */
+header a span {
+  background: #ee8883;
+  height: 60px;
+  color: #fff;
+  border-radius: 10px;
+  border: 3px solid #ee8883;
+  padding: 4px 15px;
+  text-align: center;
+  -webkit-transition: background 0.2s ease-out, color 0.2s ease-out, border 0.2s ease-out;
+  -moz-transition: background 0.2s ease-out, color 0.2s ease-out, border 0.2s ease-out;
+  -o-transition: background 0.2s ease-out, color 0.2s ease-out, border 0.2s ease-out;
+  transition: background 0.2s ease-out, color 0.2s ease-out, border 0.2s ease-out;
+}
+/* line 72, /Users/justinsitarz/Desktop/ironyard/week_8/weekend_8/progress_pics/app/assets/stylesheets/landing.scss */
+header a span:hover {
+  color: white;
+  background: #e8554e;
+  border: 3px solid #e8554e;
+}
+
+/* line 81, /Users/justinsitarz/Desktop/ironyard/week_8/weekend_8/progress_pics/app/assets/stylesheets/landing.scss */
+.wrapper {
+  width: 80%;
+  max-width: 1280px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* line 89, /Users/justinsitarz/Desktop/ironyard/week_8/weekend_8/progress_pics/app/assets/stylesheets/landing.scss */
+h1 {
+  font-size: 70.4px;
+  text-align: center;
+  margin: 100px auto 20px auto;
+  clear: both;
+  color: #00ADEF;
+  font-weight: 700;
+}
+/* line 96, /Users/justinsitarz/Desktop/ironyard/week_8/weekend_8/progress_pics/app/assets/stylesheets/landing.scss */
+h1 span {
+  font-size: 48px;
+}
+
+@media screen and (min-width: 550px) {
+  /* line 102, /Users/justinsitarz/Desktop/ironyard/week_8/weekend_8/progress_pics/app/assets/stylesheets/landing.scss */
+  h1 {
+    font-size: 88px;
+  }
+  /* line 104, /Users/justinsitarz/Desktop/ironyard/week_8/weekend_8/progress_pics/app/assets/stylesheets/landing.scss */
+  h1 span {
+    font-size: 60px;
+  }
+}
+/* line 110, /Users/justinsitarz/Desktop/ironyard/week_8/weekend_8/progress_pics/app/assets/stylesheets/landing.scss */
+h2 {
+  font-size: 22.4px;
+  font-weight: 700;
+  padding: 16px 0;
+  text-align: center;
+  line-height: 1.5;
+  clear: both;
+}
+
+@media screen and (min-width: 550px) {
+  /* line 120, /Users/justinsitarz/Desktop/ironyard/week_8/weekend_8/progress_pics/app/assets/stylesheets/landing.scss */
+  h2 {
+    font-size: 32px;
+    line-height: 1.3;
+  }
+}
+/* line 126, /Users/justinsitarz/Desktop/ironyard/week_8/weekend_8/progress_pics/app/assets/stylesheets/landing.scss */
+h3 {
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 1.5;
+}
+
+@media screen and (min-width: 550px) {
+  /* line 133, /Users/justinsitarz/Desktop/ironyard/week_8/weekend_8/progress_pics/app/assets/stylesheets/landing.scss */
+  h3 {
+    font-size: 20px;
+  }
+}
+/* line 139, /Users/justinsitarz/Desktop/ironyard/week_8/weekend_8/progress_pics/app/assets/stylesheets/landing.scss */
+h4 {
+  margin-top: 5em;
+  font-weight: 700;
+}
+
+/* line 144, /Users/justinsitarz/Desktop/ironyard/week_8/weekend_8/progress_pics/app/assets/stylesheets/landing.scss */
+.signup-btn {
+  display: block;
+  width: 170px;
+  height: 60px;
+  background: #e5f6fd;
+  color: #00ADEF;
+  font-size: 1.5em;
+  font-weight: 700;
+  border-radius: 10px;
+  border: 3px solid #00ADEF;
+  line-height: 55px;
+  text-align: center;
+  text-decoration: none;
+  margin: 30px auto 50px auto;
+  -webkit-transition: background 0.2s ease-out, color 0.2s ease-out, border 0.2s ease-out;
+  -moz-transition: background 0.2s ease-out, color 0.2s ease-out, border 0.2s ease-out;
+  -o-transition: background 0.2s ease-out, color 0.2s ease-out, border 0.2s ease-out;
+  transition: background 0.2s ease-out, color 0.2s ease-out, border 0.2s ease-out;
+}
+/* line 163, /Users/justinsitarz/Desktop/ironyard/week_8/weekend_8/progress_pics/app/assets/stylesheets/landing.scss */
+.signup-btn:hover {
+  background: #00ADEF;
+  color: #fff;
+}
+
+/* line 169, /Users/justinsitarz/Desktop/ironyard/week_8/weekend_8/progress_pics/app/assets/stylesheets/landing.scss */
+section {
+  overflow: hidden;
+}
+
+/* line 174, /Users/justinsitarz/Desktop/ironyard/week_8/weekend_8/progress_pics/app/assets/stylesheets/landing.scss */
+.featuredpics {
+  width: 100%;
+  max-height: 500px;
+  overflow: hidden;
+}
+
+/* line 182, /Users/justinsitarz/Desktop/ironyard/week_8/weekend_8/progress_pics/app/assets/stylesheets/landing.scss */
+.landingpic, .landingtext {
+  width: 100%;
+  min-height: 120px;
+  max-height: 500px;
+  background: transparent;
+  margin: 5px 0;
+  padding: 5px 0;
+  text-align: center;
+}
+
+@media screen and (min-width: 550px) {
+  /* line 194, /Users/justinsitarz/Desktop/ironyard/week_8/weekend_8/progress_pics/app/assets/stylesheets/landing.scss */
+  .landingpic {
+    width: 57.5%;
+    min-height: 200px;
+    float: left;
+    margin-right: 2%;
+    padding: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  /* line 198, /Users/justinsitarz/Desktop/ironyard/week_8/weekend_8/progress_pics/app/assets/stylesheets/landing.scss */
+  .landingtext {
+    width: 40.5%;
+    min-height: 200px;
+    float: left;
+    margin-right: 2%;
+    padding: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  /* line 202, /Users/justinsitarz/Desktop/ironyard/week_8/weekend_8/progress_pics/app/assets/stylesheets/landing.scss */
+  div:last-of-type {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 850px) {
+  /* line 209, /Users/justinsitarz/Desktop/ironyard/week_8/weekend_8/progress_pics/app/assets/stylesheets/landing.scss */
+  .landingpic {
+    width: 49%;
+    min-height: 200px;
+    float: left;
+    margin-right: 2%;
+    padding: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  /* line 213, /Users/justinsitarz/Desktop/ironyard/week_8/weekend_8/progress_pics/app/assets/stylesheets/landing.scss */
+  .landingtext {
+    width: 49%;
+    min-height: 200px;
+    float: left;
+    margin-right: 2%;
+    padding: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    box-sizing: border-box;
+  }
+}
+/* line 220, /Users/justinsitarz/Desktop/ironyard/week_8/weekend_8/progress_pics/app/assets/stylesheets/landing.scss */
+.landingpic img {
+  width: 90%;
+  max-width: 450px;
+  max-height: 450px;
+}
+
+/* line 232, /Users/justinsitarz/Desktop/ironyard/week_8/weekend_8/progress_pics/app/assets/stylesheets/landing.scss */
+footer {
+  width: 100%;
+  background: #c1e9fb;
+  text-align: center;
+  padding: 1em 0;
+  margin-top: 30px;
+  clear: both;
+}
+/* line 18, /Users/justinsitarz/Desktop/ironyard/week_8/weekend_8/progress_pics/app/assets/stylesheets/users.scss */
+.userpg {
+  margin-top: 100px;
+}
+
+/* line 22, /Users/justinsitarz/Desktop/ironyard/week_8/weekend_8/progress_pics/app/assets/stylesheets/users.scss */
+.usercol, .usercolm {
+  width: 90%;
+  background: transparent;
+  margin: 5px 0;
+  padding: 5px 0;
+  text-align: left;
+}
+
+@media screen and (min-width: 550px) {
+  /* line 32, /Users/justinsitarz/Desktop/ironyard/week_8/weekend_8/progress_pics/app/assets/stylesheets/users.scss */
+  .usercolm {
+    width: 49%;
+    min-height: 200px;
+    float: left;
+    margin-right: 2%;
+    padding: 5px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+  }
+
+  /* line 36, /Users/justinsitarz/Desktop/ironyard/week_8/weekend_8/progress_pics/app/assets/stylesheets/users.scss */
+  .usercol {
+    width: 23.5%;
+    min-height: 200px;
+    float: left;
+    margin-right: 2%;
+    padding: 5px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+  }
+
+  /* line 40, /Users/justinsitarz/Desktop/ironyard/week_8/weekend_8/progress_pics/app/assets/stylesheets/users.scss */
+  div:last-of-type {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 850px) {
+  /* line 47, /Users/justinsitarz/Desktop/ironyard/week_8/weekend_8/progress_pics/app/assets/stylesheets/users.scss */
+  .usercolm {
+    width: 40.5%;
+    min-height: 200px;
+    float: left;
+    margin-right: 2%;
+    padding: 5px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+  }
+
+  /* line 51, /Users/justinsitarz/Desktop/ironyard/week_8/weekend_8/progress_pics/app/assets/stylesheets/users.scss */
+  .usercol {
+    width: 27.75%;
+    min-height: 200px;
+    float: left;
+    margin-right: 2%;
+    padding: 5px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+  }
+}
+/* line 83, /Users/justinsitarz/Desktop/ironyard/week_8/weekend_8/progress_pics/app/assets/stylesheets/users.scss */
+.form-inputs input[type=User_name], input[type=email], input[type=password], input[type=password_confirmation] {
+  background: #f5f5f5;
+  font-size: 0.8rem;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  border: none;
+  padding: 13px 10px;
+  width: 100%;
+  margin-bottom: 20px;
+  box-shadow: inset 0px 2px 3px rgba(0, 0, 0, 0.1);
+  clear: both;
+}
+
+/* line 98, /Users/justinsitarz/Desktop/ironyard/week_8/weekend_8/progress_pics/app/assets/stylesheets/users.scss */
+.form-inputs input[type=user_name]:focus, input[type=email]:focus, input[type=password_confirmation]:focus, input[type=password]:focus {
+  outline: none;
+}
+
+/* line 103, /Users/justinsitarz/Desktop/ironyard/week_8/weekend_8/progress_pics/app/assets/stylesheets/users.scss */
+.form-actions input[type=submit] {
+  max-width: 100px;
+  width: 50%;
+  margin-bottom: 6px;
+  margin-top: 5px;
+  padding: 10px 0;
+  color: #00ADEF;
+  font-size: 1em;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  background: transparent;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  border: 2px solid #00ADEF;
+  clear: both;
+}
+/* line 120, /Users/justinsitarz/Desktop/ironyard/week_8/weekend_8/progress_pics/app/assets/stylesheets/users.scss */
+.form-actions input[type=submit]:hover {
+  background: #79d0f6;
+  color: #fff;
+}
+
+/* line 127, /Users/justinsitarz/Desktop/ironyard/week_8/weekend_8/progress_pics/app/assets/stylesheets/users.scss */
+.wrapper a {
+  text-decoration: none;
+  color: #8B8B8B;
+  clear: both;
+  display: inline-block;
+}
+/* line 133, /Users/justinsitarz/Desktop/ironyard/week_8/weekend_8/progress_pics/app/assets/stylesheets/users.scss */
+.wrapper a:hover {
+  color: #222;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
