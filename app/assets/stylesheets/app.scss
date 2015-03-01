@@ -136,10 +136,13 @@ figure.image-with-caption {
     bottom:10px;
 }
 
-.image-save-buttons {
+.image-save-buttons, {
 	text-align: center;
 }
 
+.go-to-after, .save-and-set {
+	height: 32px;
+}
 .set-reminder {
 	text-align: center;
 }

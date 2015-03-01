@@ -2,9 +2,6 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-
-@import 'reset';
-@import 'app';
 $col: 6.5%;
 $gut: 2%;
 
@@ -19,6 +16,8 @@ $gut: 2%;
   box-sizing:border-box;
 }
 
+
+//
 
 .whole {
 	width:100%;
@@ -230,6 +229,8 @@ div:last-of-type {
   @include grid(6);
 }
 
+}
+
 
 .landingpic img {
 	width:90%;
@@ -262,3 +263,4 @@ footer {
 //   border: 1px solid red !important;
 // }
 }
+
