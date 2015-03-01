@@ -1,23 +1,56 @@
-  To add a new library into rails
+ Getting started
 
-For things found on Rails-Assets
-Step 1 - Find the package on rails-assets.org
-Step 2 - add the gem line of code to Gemfile in the source 'https://rails-assets.org' section
-Step 3 - Add the //= require ng-camera (example - replace ng-camera) to application.js file  (app/assets/javascript/application.js) before the line item for //= require_tree
-Step 4 - Run bundle install from the terminal.
+	Make sure postgres is running properly from anywhere in your terminal
+		Step 1 - gem install lunchy
+		Step 2 - lunchy stop postgres
+		Step 3 - lunchy start postgres
 
-For things not found on Rails Assets
-Step 1 - download the zip file source code from Github (or other source)
-Step 2 - upload the .min.js (or .js if the .min.js is not available) to the assets >> javascripts >> app >>
-Step 3 - Add the //= require ng-camera (example - replace ng-camera) to application.js file  (app/assets/javascript/application.js) before the line item for //= require_tree
+	Start your server
+		Step 1 - Run the command "rails s" from your terminal inside the repo you're working in.
+
+	Make sure the database is properly seeded
+		Step 1 - if you get a 'pending migrations' error when you load up localhost:3000 
+		Step 2 - Run 'rake db:migrate' from your terminal
+		Step 3 - Then run 'rake db:seed' which will create a seed file that fills the database with some generated data we can work with - it will seed 10 users with pictures.
+
+To add a new library into rails
+
+	For things found on Rails-Assets
+		Step 1 - Find the package on rails-assets.org
+		Step 2 - add the gem line of code to Gemfile in the source 'https://rails-assets.org' section
+		Step 3 - Add the //= require ng-camera (example - replace ng-camera) to application.js file  (app/assets/javascript/application.js) before the line item for //= require_tree
+		Step 4 - Run bundle install from the terminal.
+
+	For things not found on Rails Assets
+		Step 1 - download the zip file source code from Github (or other source)
+		Step 2 - upload the .min.js (or .js if the .min.js is not available) to the assets >> javascripts >> app >>
+		Step 3 - Add the //= require ng-camera (example - replace ng-camera) to application.js file  (app/assets/javascript/application.js) before the line item for //= require_tree
 
 How to push from your local branch to the remote master repo on Github
-Step 1 - Make sure everything is added, committed to your local branch
-Step 2 - git checkout master to switch to my local master branch
-Step 3 - git pull , gets the updates from remote origin master file on github repo
-Step 4 - git push, from local master branch to remote master repo on Github
+	Step 1 - Make sure everything is added, committed to your local branch
+	Step 2 - git checkout master to switch to my local master branch
+	Step 3 - git pull , gets the updates from remote origin master file on github repo
+	Step 4 - git push, from local master branch to remote master repo on Github
 
 Current camera library documentation
-http://bcabanes.github.io/ng-camera/
+	http://bcabanes.github.io/ng-camera/
 
-How do I get more pages to work on?
+How do I get my pages to display?
+	Step 1 - Set up your UI Router
+	Step 2 - Git pull from remote/master on github repo
+
+
+Important Files of Note:
+Landing Page / Sign Up Page / Registration Page - app/views/devise/registrations/new.html.erb
+
+How to add new templates and display them properly
+
+***Current Project Limitations***
+
+- Can't style the browsers' camera permissions pop-up b/c it could lead to misuse. Ie changing the text to mislead the user. 
+
+- If you're taking a picture with computer, it would be awesome to use voice commands and it would work. But for now the timer will work. 
+
+
+
+

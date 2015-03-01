@@ -1,0 +1,145 @@
+.progress-bar {
+	background-color: red;
+	text-align: center;
+	font-size:11px;
+	margin: 10px 0;
+}
+
+.instructions {
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.progress-bar li {
+	display: inline-block;
+	margin: 0 1%;
+}
+.before-options {
+	width: 80%;
+	margin: 0 auto;
+	background-color: blue;
+	padding: 10px 0;
+
+}
+
+.take-photo-option {
+	display: block;
+	width: 320px;
+	margin: 10px auto;
+	height: 80px;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload {
+	display: block;
+	width: 320px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    margin: 10px auto;
+    text-align: center;
+    background-color: green;
+    border-radius: 5px;
+    height: 80px;
+    line-height: 80px;
+    
+}
+
+.shutter-container {
+	margin: 0 auto;
+	text-align: center;
+	background-color: orange;
+}
+
+#ng-camera-feed {
+	background: green;
+	margin: 10px auto;
+}
+
+//This is the video that displays the image 
+// you're about to take. 
+// We may want to add a message that 
+// says to click allow.
+// I had to add ! important overrides because 
+// there was inline styling being pushed in by webcamJS
+#ng-camera-feed video {
+	background-color: blue;
+	margin: 10px auto;
+	border-radius: 5px;
+	-webkit-transform-origin: none !important;
+	transform-origin: none !important;
+	-webkit-transform: none !important; 
+	transform: none !important;
+}
+// This is the take picture button
+#ng-camera-action {
+	height: 80px;
+	width: 320px;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+.draft-image-container {
+	display: block;
+	width: 100%;
+	height: auto;
+	margin: 10px auto;
+	text-align: center;
+	background-color: purple;
+	border-radius: 5px;
+}
+
+.draft-image-container img {
+	display: block;
+	margin: 0 auto;
+	border-radius: 5px;
+}
+
+.tryAgain {
+	display: block;
+	margin: 0 auto;
+}
+
+.accept {
+	display: inline-block;
+}
+
+figure.image-with-caption {
+	display: block;
+	width: 416px;
+	height: 320px;
+	margin: 10px auto;
+	background-color: blue;
+	position: relative;
+	border-radius: 5px;
+}
+
+.image-with-caption img {
+	// position: absolute;
+	// left: 0;
+	// top: 0;
+	border-radius: 5px;
+}
+
+.image-with-caption figcaption {
+	z-index:100;
+    position:absolute;    
+    color:white;
+    font-size:16px;
+    font-weight:bold;
+    left:10px;
+    bottom:10px;
+}
+
+.image-save-buttons {
+	text-align: center;
+}
+
+.set-reminder {
+	text-align: center;
+}
