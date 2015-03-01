@@ -1,0 +1,13 @@
+<h1>User Name - <%= current_user.user.id %></h1>
+
+<% @pictures.each do |picture| %>
+  <div class="col-md-3">
+    <ul>
+      <li><%= image_tag picture.photo (:medium) %></li>
+      <li>Caption - <%= room.room_description %></li>
+    </ul>
+  </div>
+<% end %>
+
+
+
