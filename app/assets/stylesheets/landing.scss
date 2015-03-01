@@ -85,6 +85,15 @@ header {
 	overflow: hidden;
 }
 
+.wrapper a {
+    text-decoration: none;
+    color:#00ADEF;
+    // clear: both;
+    // display: inline-block;
+    // &:hover {
+    //     color:#222 ;
+    //     }
+}
 
 h1 {
 	font-size: 70.4px;
