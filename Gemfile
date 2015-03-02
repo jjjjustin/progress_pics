@@ -68,6 +68,7 @@ end
 
 gem 'bootstrap-sass'
 gem 'simple_form'
+gem 'faker'
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-angular'
