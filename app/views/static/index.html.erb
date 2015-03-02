@@ -1,14 +1,15 @@
 <!-- xinyu: added header -->
-<!-- <div class="whole">
+<div class="whole">
       <header>
         <a href="/landing"><h6>PROGRESS PICS</h6></a>
         <ul>
-          <li><a href="/profile">Your Progress Pics</a></li>
+          <li><a id="yourprofile" href="/profile">Your Progress Pics</a></li>
           <li><%= link_to "Log out", destroy_user_session_path, method: :delete %></li>
         </ul>
       </header>
 
-<section class="wrapper indexwrapper"> -->
+<section class="wrapper indexwrapper">
+<h2 class="userpg">start a new <br>progress-pics</h2>
 <!-- xinyu: added header -->
 
 <div ng-app='app'>
@@ -22,7 +23,7 @@
         </ul>
     </div>
 
-    <div class="instructions">Take a "before" photo (or upload existing)</div>
+    <div class="instructions">Add a "before" photo</div>
 
     <div class="before-options" ng-if="showPicOptions">
         <button class="take-photo-option" ng-click="takePhotoEnabled()">Take Photo</button>
