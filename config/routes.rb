@@ -9,6 +9,8 @@ Rails.application.routes.draw do
 
   get '/javascript/', to: 'static#index'
 
+  get '/profile/', to: 'pictures#index'
+
   root 'static#index'
 
   # The priority is based upon order of creation: first created -> highest priority.

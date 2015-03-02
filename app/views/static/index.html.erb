@@ -1,3 +1,4 @@
+
 <!-- xinyu: added header -->
 <div class="whole">
       <header>
@@ -25,6 +26,8 @@
 
     <div class="instructions">Add a "before" photo</div>
 
+    <%= javascript_tag "var userId=#{current_user.id}"%>
+
     <div class="before-options" ng-if="showPicOptions">
         <button class="take-photo-option" ng-click="takePhotoEnabled()">Take Photo</button>
 
@@ -35,7 +38,7 @@
     </div>
 
 
-     <div class="shutter-container" ng-hide="hidePicTaker || vm.picture">
+     <div class="shutter-container" ng-hide="hidePicTaker || beforePicture">
         <ng-camera
             capture-message="Success!"
             countdown="1"
@@ -46,20 +49,20 @@
             image-format="jpeg, png"
             jpeg-quality="100"
             action-message="Take picture"
-            snapshot="vm.picture"
+            snapshot="beforePicture"
             flash-fallback-url="/vendors/webcamjs/webcam.swf">
         </ng-camera>
       </div>
 
-      <div class="draft-image-container" ng-show="vm.picture && showShutter">
-        <img ng-src="{{vm.picture}}" alt="draft picture">
-        <button class="tryAgain" ng-click="vm.picture = !vm.picture">Try Again</button>
+      <div class="draft-image-container" ng-show="beforePicture && showShutter">
+        <img ng-src="{{beforePicture}}" alt="draft picture">
+        <button class="tryAgain" ng-click="beforePicture = !beforePicture">Try Again</button>
         <button class="accept" ng-click="showCaption()">Accept</button>
       </div>
 
       <div class="image-save" ng-show="showIt">
           <figure class="image-with-caption">
-            <img ng-src="{{vm.picture}}" alt="caption picture">
+            <img ng-src="{{beforePicture}}" alt="caption picture">
             <figcaption>
                 <p class="day">Day 1</p>
                 <p class="date">{{date | date:'mediumDate'}}</p>
