@@ -1,5 +1,4 @@
 .progress-bar {
-	// background-color: red;
 	text-align: center;
 	font-size:32px;
 	margin: 100px 0;
@@ -20,11 +19,10 @@
 .before-options {
 	width: 80%;
 	margin: 0 auto;
-	background-color: transparent;
 	padding: 10px 0;
 	border-radius: 10px;
+	background-color: transparent;
 	border: 7px solid #8D8D8D;
-	max-width: 90%;
 	min-height:400px;
 
 }
@@ -49,15 +47,15 @@ input[type="file"] {
 
 .custom-file-upload {
 	display: block;
-	width: 320px;
+	width: 200px;
     border: 3px solid #00ADEF;
     cursor: pointer;
     margin: 10px auto;
     text-align: center;
     background-color: #C1E9FB;
     border-radius: 5px;
-    height: 80px;
-    line-height: 80px;
+    height: 60px;
+    line-height: 60px;
     color:#00ADEF;
     
 }
@@ -65,11 +63,13 @@ input[type="file"] {
 .shutter-container {
 	margin: 0 auto;
 	text-align: center;
-	background-color: orange;
+	background-color: transparent;
+	border: 7px solid #8D8D8D;
+	border-radius: 10px;
 }
 
 #ng-camera-feed {
-	background: green;
+	// background: green;
 	margin: 10px auto;
 }
 
@@ -80,7 +80,7 @@ input[type="file"] {
 // I had to add ! important overrides because 
 // there was inline styling being pushed in by webcamJS
 #ng-camera-feed video {
-	background-color: blue;
+	background-color: transparent;
 	margin: 10px auto;
 	border-radius: 5px;
 	-webkit-transform-origin: none !important;
@@ -94,16 +94,25 @@ input[type="file"] {
 	width: 320px;
 	cursor: pointer;
 	border-radius: 5px;
+	margin: 10px auto;
+	cursor: pointer;
+	color:white;
+	font-size: 1.3em;
+	font-weight: 500;
+	background:#00ADEF;
+	border: 3px solid #00ADEF;
 }
 
 .draft-image-container {
 	display: block;
-	width: 100%;
+	width: 80%;
 	height: auto;
 	margin: 10px auto;
 	text-align: center;
-	background-color: purple;
 	border-radius: 5px;
+	background-color: transparent;
+	border: 7px solid #8D8D8D;
+	border-radius: 10px;
 }
 
 .draft-image-container img {
@@ -114,11 +123,35 @@ input[type="file"] {
 
 .tryAgain {
 	display: block;
-	margin: 0 auto;
+	margin: 10px auto;
+	padding:0 5px;
+	color: white;
+	font-size: 20px;
+	border: 3px solid #e8554e;
+	background: #ee8883;
+			height: 50px;
+			color: #fff;
+			border-radius: 10px;
+			border: 3px solid #ee8883;
+			padding: 4px 15px;
+			text-align: center;
 }
 
 .accept {
 	display: inline-block;
+		margin: 10px auto;
+	padding:0 5px;
+	color: white;
+	font-size: 20px;
+	border: 3px solid #00ADEF;
+	background: #00ADEF;
+			height: 50px;
+			color: #fff;
+			border-radius: 10px;
+			border: 3px solid #00ADEF;
+			padding: 4px 15px;
+			text-align: center;
+
 }
 
 figure.image-with-caption {
@@ -143,7 +176,8 @@ figure.image-with-caption {
     position:absolute;    
     color:white;
     font-size:16px;
-    font-weight:bold;
+    font-weight:700;
+    font-family: "museo-sans",sans-serif;
     left:10px;
     bottom:10px;
 }
@@ -154,6 +188,18 @@ figure.image-with-caption {
 
 .go-to-after, .save-and-set {
 	height: 32px;
+		color: white;
+	font-size: 20px;
+	border: 3px solid #00ADEF;
+	background: #00ADEF;
+	border-radius: 5px;
+
+
+}
+
+.save-and-set {
+	background: #8D8D8D;
+
 }
 .set-reminder {
 	text-align: center;
@@ -168,4 +214,13 @@ figure.image-with-caption {
 	float: right;
 	background-color: orange;
 	width: 50%;
+}
+
+.yourppics {
+	margin: 0 auto;
+	border-radius: 10px;
+	background-color: transparent;
+	border: 7px solid #8D8D8D;
+	min-height:400px;
+
 }
