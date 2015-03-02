@@ -28,13 +28,16 @@
 
 		 };
 
-
-		 $scope.afterPhoto = false;
+		$scope.afterPhoto = false;
 
 		$scope.addAfterPhoto = function () {
 			$scope.afterPhoto = true;
 			$scope.showIt = false;
+			$http.post('/users/'+userId+'/pictures.json', { picture: { photo: beforePicture } } );
+
+
 		};
+
 		    // Called when Accept button is clicked
 		// send photo to the server
 		// $scope.storePhoto = function(photo) {
