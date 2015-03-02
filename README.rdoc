@@ -12,8 +12,10 @@ The fastest and easiest way to track and show off your progress - whether you're
 
 Live access at: https://protected-gorge-8922.herokuapp.com
 
-Collaborators:
+== Collaborators:
 
-Xinyu
+Xinyu Wang | github.com/xinyu0
 
-Ryan
+Ryan Luedecke | github.com/ryanluedecke
+
+Justin Sitarz | github.com/jjjjustin
