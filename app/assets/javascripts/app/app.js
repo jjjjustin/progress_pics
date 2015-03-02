@@ -1,1 +1,1 @@
-angular.module('app', ['app.controller', 'camera']);
+angular.module('app', ['app.controllers', 'camera', 'ui.router']);
