@@ -1,14 +1,16 @@
 .progress-bar {
-	background-color: red;
+	// background-color: red;
 	text-align: center;
-	font-size:11px;
+	font-size:32px;
 	margin: 100px 0;
 }
 
 .instructions {
+	margin-top: 100px;
 	width: 80%;
 	margin: 0 auto;
 	text-align: center;
+	clear:both;
 }
 
 .progress-bar li {
@@ -18,8 +20,12 @@
 .before-options {
 	width: 80%;
 	margin: 0 auto;
-	background-color: blue;
+	background-color: transparent;
 	padding: 10px 0;
+	border-radius: 10px;
+	border: 7px solid #8D8D8D;
+	max-width: 90%;
+	min-height:400px;
 
 }
 
@@ -30,6 +36,11 @@
 	height: 80px;
 	cursor: pointer;
 	border-radius: 5px;
+	color:white;
+	font-size: 1.3em;
+	font-weight: 500;
+	background:#00ADEF;
+	border: 3px solid #00ADEF;
 }
 
 input[type="file"] {
@@ -39,14 +50,15 @@ input[type="file"] {
 .custom-file-upload {
 	display: block;
 	width: 320px;
-    border: 1px solid #ccc;
+    border: 3px solid #00ADEF;
     cursor: pointer;
     margin: 10px auto;
     text-align: center;
-    background-color: green;
+    background-color: #C1E9FB;
     border-radius: 5px;
     height: 80px;
     line-height: 80px;
+    color:#00ADEF;
     
 }
 
@@ -114,7 +126,7 @@ figure.image-with-caption {
 	width: 416px;
 	height: 320px;
 	margin: 10px auto;
-	background-color: blue;
+	background-color: transparent;
 	position: relative;
 	border-radius: 5px;
 }
@@ -148,7 +160,7 @@ figure.image-with-caption {
 }
 
 .before-photo-left {
-	background-color: blue;
+	background-color: transparent;
 	width:50%;
 }
 
