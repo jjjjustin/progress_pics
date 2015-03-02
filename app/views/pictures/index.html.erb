@@ -1,0 +1,12 @@
+<h1>User Profile</h1>
+
+<% @pictures.each do |picture| %>
+  <div class="col-md-3">
+    <ul>
+      <li><%= image_tag picture.photo.url (:medium) %></li>
+      <li>Caption - <%= picture.caption %></li>
+    </ul>
+  </div>
+<% end %>
+
+

@@ -1,10 +1,8 @@
 require "base64"
-
 class PicturesController < ApplicationController
 
   def index
     @pictures = Picture.all
-      render :json => @pictures
   end
 
   def before
@@ -65,11 +63,6 @@ class PicturesController < ApplicationController
     end
   end
 
-  def index
-   render json: Issue.all
-   rescue StandardError => e
-   render json: { message: e.message, status: 500 }.to_json, status: 500
- end
 
   private
 

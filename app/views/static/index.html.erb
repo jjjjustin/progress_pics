@@ -1,3 +1,5 @@
+
+
 <div ng-app='app'>
     <div ng-controller="PhotoCtrl">
     <div class="progress-bar">
@@ -10,6 +12,8 @@
     </div>
 
     <div class="instructions">Take a "before" photo (or upload existing)</div>
+
+    <%= javascript_tag "var userId = #{current_user.id};" %>
 
     <div class="before-options" ng-if="showPicOptions">
         <button class="take-photo-option" ng-click="takePhotoEnabled()">Take Photo</button>
