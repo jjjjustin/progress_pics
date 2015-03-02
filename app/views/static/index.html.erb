@@ -4,27 +4,28 @@
       <header>
         <a href="/landing"><h6>PROGRESS PICS</h6></a>
         <ul>
-          <li><a id="yourprofile" href="/profile">Your Progress Pics</a></li>
+          <li><a id="yourprofile" href="/profile">Your Pics</a></li>
           <li><%= link_to "Log out", destroy_user_session_path, method: :delete %></li>
         </ul>
       </header>
 
-<section class="wrapper indexwrapper">
-<h2 class="userpg">start a new <br>progress-pics</h2>
+<section class="wrapper">
+
 <!-- xinyu: added header -->
 
 <div ng-app='app'>
     <div ng-controller="PhotoCtrl">
+    <!-- <div class="progress-bar"> -->
     <div class="progress-bar">
-        <p>Progress Bar area</p>
-        <ul>
-            <li>Step 1 - Before Photo</li>
-            <li>Step 2 - After Photo</li>
-            <li>Step 3 - Share</li>
-        </ul>
-    </div>
+    <p>How It Works</p>
+    <div class="works"><img src="http://i57.tinypic.com/wlzpk1.png" alt="camera" width="100px">Step 1 - Add a Before Photo</div>
 
-    <div class="instructions">Add a "before" photo</div>
+    <div class="works"><img src="http://i57.tinypic.com/6ogaid.png" alt="camera" width="100px">Step 2 - Add an After Photo</div>
+
+    <div class="works"><img src="http://i60.tinypic.com/2zs4awm.png" alt="download" width="100px">Step 3 - Download or Share</div></div>
+    <!-- </div> -->
+
+    <div class="instructions"><h2 class="userpg"><br><hr><br>start a new <br>progress-pics</h2></div>
 
     <%= javascript_tag "var userId=#{current_user.id}"%>
 
